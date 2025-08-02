@@ -1,9 +1,9 @@
 services:
   - type: web
     name: lustra-app
-    env: python
+    runtime: python
     buildCommand: ""
-    startCommand: gunicorn app:app
+    startCommand: python app.py
     envVars:
       - key: FLASK_ENV
         value: production
