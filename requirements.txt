@@ -3,3 +3,4 @@ requests==2.31.0
 werkzeug==2.3.6
 opencv-python==4.8.0.74
 deepface == 0.0.79
+numpy==1.26.4
