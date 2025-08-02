@@ -1,0 +1,75 @@
+/* Base styling */
+body {
+  background-color: #ffe6f0; /* light pink */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Heading */
+h1 {
+  color: #1a237e; /* navy blue */
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Form box styling */
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+}
+
+/* Input & select styling */
+input[type="file"],
+select {
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+  background-color: #1a237e;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0f153e;
+}

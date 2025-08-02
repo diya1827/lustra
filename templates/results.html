@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial Suggestions – Lustra</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      background-color: hsl(336, 100%, 95%);
+      font-family: 'Georgia', 'Garamond', serif;
+      margin: 0;
+      padding: 40px;
+      color: rgb(63, 63, 95);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .video-card {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      padding: 15px;
+      background-color: #fff0f5;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .video-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    a.button-back {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: rgb(243, 201, 211);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a.button-back:hover {
+      background-color: rgb(230, 180, 200);
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ Your Glow Guide is Ready ✨</h1>
+  <p><strong>Search Query:</strong> {{ query }}</p>
+
+  {% for video in videos %}
+    <div class="video-card">
+      <h3>{{ video.title }}</h3>
+      <a href="{{ video.url }}" target="_blank">
+        <img src="{{ video.thumbnail }}" alt="Thumbnail of {{ video.title }}">
+      </a>
+    </div>
+  {% endfor %}
+
+  <a href="/" class="button-back">🔙 Try Again</a>
+</body>
+</html>

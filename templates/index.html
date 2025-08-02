@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lustra</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body style="background-color:hsl(336, 100%, 95%); font-family: 'Georgia', 'Garamond', serif;">
+  <div class="container" style="max-width: 600px; margin: auto; padding: 30px;">
+    <h1 style="color: rgb(63, 63, 95); text-align: center; font-size: 2.5rem; font-weight: 600; margin-bottom: 30px;">
+      Lustra – Fall in love with your light
+    </h1>
+
+    <form class="form-box" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 15px;">
+
+      <label>Upload Your Selfie:
+        <input type="file" name="image" required />
+      </label>
+
+      <label>Choose your event:
+        <select name="event">
+          <option>Wedding</option>
+          <option>Casual</option>
+          <option>Party</option>
+          <option>Professional</option>
+        </select>
+      </label>
+
+      <label>Your Skin Type:
+        <select name="skin_type">
+          <option>Normal</option>
+          <option>Oily</option>
+          <option>Dry</option>
+          <option>Combination</option>
+        </select>
+      </label>
+
+      <label>Preferred Look:
+        <select name="preferred_look">
+          <option>Natural</option>
+          <option>Glam</option>
+          <option>Bold</option>
+          <option>Minimal</option>
+        </select>
+      </label>
+
+      <label>Tutorial Duration:
+        <select name="duration">
+          <option>Quick (5–10 min)</option>
+          <option>Medium (10–20 min)</option>
+          <option>Full (20+ min)</option>
+        </select>
+      </label>
+
+      <label>Focus Area:
+        <select name="focus_area">
+          <option>Full Face</option>
+          <option>Eyes</option>
+          <option>Lips</option>
+          <option>Base Only</option>
+        </select>
+      </label>
+
+      <label>Adjust Skin Tone (optional):
+        <select name="tone_override">
+          <option>(Use detected tone)</option>
+          <option>Fair</option>
+          <option>Medium</option>
+          <option>Dusky</option>
+          <option>Deep</option>
+        </select>
+      </label>
+
+      <button type="submit" style="padding: 10px; font-size: 1rem; background-color: rgb(243, 201, 211); border: none; border-radius: 8px; cursor: pointer;">
+        ✨ Get Tutorials
+      </button>
+
+    </form>
+  </div>
+</body>
+</html>
