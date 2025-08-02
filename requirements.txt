@@ -3,4 +3,4 @@ requests==2.31.0
 werkzeug==2.3.6
 deepface==0.0.79
 opencv-python==4.8.0.74
-tensorflow==2.11.0
+tensorflow-cpu==2.13.0
